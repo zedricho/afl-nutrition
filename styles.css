@@ -494,6 +494,46 @@ tbody tr:hover {
   }
 }
 
+/* Meal Image Grid */
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--spacing-sm);
+  margin: var(--spacing-md) 0;
+}
+
+.meal-item {
+  text-align: center;
+}
+
+.meal-item img {
+  width: 100%;
+  max-width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: var(--spacing-xs);
+}
+
+.meal-item p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/* Section Images */
+.section-image {
+  margin: var(--spacing-md) 0;
+  text-align: center;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Print Styles */
 @media print {
   .navbar, .footer, .quick-nav {
